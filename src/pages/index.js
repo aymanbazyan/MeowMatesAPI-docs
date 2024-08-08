@@ -1,9 +1,17 @@
-function Index() {
-  const a = () => (window.location.href = "/docs");
+import React from "react";
+import BrowserOnly from "@docusaurus/BrowserOnly";
 
-  a();
+export default function MyComponent() {
+  function a() {
+    window.location.href = "/docs";
+  }
 
-  return null;
+  return (
+    <BrowserOnly>
+      {() => {
+        // Client-side only code here
+        return <div>welcome{a()}</div>;
+      }}
+    </BrowserOnly>
+  );
 }
-
-export default Index;
