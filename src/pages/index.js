@@ -1,7 +1,9 @@
-function index() {
-  window.location.href = "/docs";
+function Index() {
+  const a = () => (window.location.href = "/docs");
+
+  a();
 
   return null;
 }
 
-export default index;
+export default Index;
