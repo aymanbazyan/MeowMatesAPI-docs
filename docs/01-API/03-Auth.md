@@ -1,6 +1,8 @@
 # Authentication
 
-> ## Sign up using `POST` at /api/v1/auth/signup
+> ## Sign up
+
+using `POST` at /api/v1/auth/signup
 
 ```js
 // body
@@ -12,7 +14,9 @@
 }
 ```
 
-> ## Login using `POST` at /api/v1/auth/login
+> ## Login
+
+using `POST` at /api/v1/auth/login
 
 ```js
 // body
@@ -26,7 +30,9 @@
 Both these Requests returns a token, save it for later.
 :::
 
-> ## Forgot password `POST` at /api/v1/auth/forgotPassword
+> ## Forgot password
+
+using `POST` at /api/v1/auth/forgotPassword
 
 ```js
 // body
@@ -37,7 +43,7 @@ Both these Requests returns a token, save it for later.
 
 this should send you a reset token
 
-> ## Reset password `PATCH` at /api/v1/auth/resetPassword/;token
+using `PATCH` at /api/v1/auth/resetPassword/;token
 
 ```js
 // body
@@ -47,7 +53,9 @@ this should send you a reset token
 }
 ```
 
-> ## Change my password `PATCH` at /api/v1/auth/updateMyPassword
+> ## Change password
+
+using `PATCH` at /api/v1/auth/updateMyPassword
 
 ```js
 // body
@@ -63,7 +71,26 @@ this should send you a reset token
 }
 ```
 
-> ## Delete account `DELETE` at /api/v1/auth/deleteMyAccount
+> ## Update info
+>
+> using `PATCH` at /api/v1/auth/changeAccountData
+
+```js
+// body
+{
+    "displayName": "AYMENs",
+    "bio":"hello there"
+}
+
+// headers
+{
+  Authorization: "Bearer <TOKEN>";
+}
+```
+
+> ## Delete account
+
+using `DELETE` at /api/v1/auth/deleteMyAccount
 
 ```js
 // headers
