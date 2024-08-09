@@ -10,7 +10,7 @@ export default function MyComponent() {
     <BrowserOnly>
       {() => {
         // Client-side only code here
-        return <div>welcome{a()}</div>;
+        return <div>{a()}</div>;
       }}
     </BrowserOnly>
   );
