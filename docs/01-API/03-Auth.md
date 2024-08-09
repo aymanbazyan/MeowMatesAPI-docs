@@ -26,10 +26,6 @@ using `POST` at /api/v1/auth/login
 }
 ```
 
-:::tip Note
-Both these Requests returns a token, save it for later.
-:::
-
 > ## Forgot password
 
 using `POST` at /api/v1/auth/forgotPassword
@@ -41,7 +37,9 @@ using `POST` at /api/v1/auth/forgotPassword
 }
 ```
 
-this should send you a reset token
+:::tip Note
+These 3 requests returns a token, save it for other uses.
+:::
 
 using `PATCH` at /api/v1/auth/resetPassword/;token
 
@@ -72,8 +70,8 @@ using `PATCH` at /api/v1/auth/updateMyPassword
 ```
 
 > ## Update info
->
-> using `PATCH` at /api/v1/auth/changeAccountData
+
+using `PATCH` at /api/v1/auth/changeAccountData
 
 ```js
 // body
