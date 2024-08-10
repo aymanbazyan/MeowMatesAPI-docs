@@ -35,4 +35,4 @@ EMAIL_PASSWORD = <YOUR EMAIL PASSWORD>
 Nobody should see this file.
 :::
 
-_Last updated on August 8, 2024 by Aymen cholobob_
+_Last updated on August 8, 2024 by Aymen_

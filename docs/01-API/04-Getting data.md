@@ -16,4 +16,4 @@ using `GET` at **/api/v1/users/;id**
 <URL>/api/v1/users/<123456789>
 ```
 
-_Last updated on August 9, 2024 by Aymen cholobob_
+_Last updated on August 9, 2024 by Aymen_

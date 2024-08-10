@@ -107,7 +107,7 @@ const config = {
               },
               {
                 label: "Discord",
-                href: "https://discord.gg/27SM7x6nZs",
+                href: "https://discordapp.com/users/541202888563752960",
               },
               {
                 label: "Twitter",
@@ -129,7 +129,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} MeowMates, Inc. Built with Cholobob.`,
+        copyright: `Copyright © ${new Date().getFullYear()} MeowMates, Inc.`,
       },
       prism: {
         theme: prismThemes.github,

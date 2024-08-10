@@ -55,4 +55,4 @@ To send requests, **download and use postman** from **[here](https://www.postman
 
 Send a `GET` request to `/api/v1/users` to test it out, and edit some lines: the site **reloads automatically** and displays your changes.
 
-_Last updated on August 8, 2024 by Aymen cholobob_
+_Last updated on August 8, 2024 by Aymen_

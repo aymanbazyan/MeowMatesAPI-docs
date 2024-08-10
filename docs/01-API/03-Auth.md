@@ -7,8 +7,8 @@ using `POST` at /api/v1/auth/signup
 ```js
 // body
 {
-  "displayName": "مارك الزكارنة",
-  "email": "ILoveHatim@gmail.com",
+  "displayName": "Aymen",
+  "email": "example@gmail.com",
   "password": "pass1234", // New password
   "passwordConfirm": "pass1234"
 }
@@ -21,7 +21,7 @@ using `POST` at /api/v1/auth/login
 ```js
 // body
 {
-  "email": "ILoveHatim@gmail.com",
+  "email": "example@gmail.com",
   "password": "pass1234", // Current password
 }
 ```
@@ -33,7 +33,7 @@ using `POST` at /api/v1/auth/forgotPassword
 ```js
 // body
 {
-  "email": "ILoveHatim@gmail.com",
+  "email": "example@gmail.com",
 }
 ```
 
@@ -76,7 +76,7 @@ using `PATCH` at /api/v1/auth/changeAccountData
 ```js
 // body
 {
-    "displayName": "AYMENs",
+    "displayName": "My new name",
     "bio":"hello there"
 }
 
@@ -97,4 +97,4 @@ using `DELETE` at /api/v1/auth/deleteMyAccount
 }
 ```
 
-_Last updated on August 9, 2024 by Aymen cholobob_
+_Last updated on August 9, 2024 by Aymen_
