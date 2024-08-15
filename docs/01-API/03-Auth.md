@@ -1,5 +1,7 @@
 # Authentication
 
+---
+
 > ## Sign up
 
 using `POST` at /api/v1/auth/signup
@@ -12,6 +14,30 @@ using `POST` at /api/v1/auth/signup
   "password": "pass1234", // New password
   "passwordConfirm": "pass1234"
 }
+// This account is not valid yet
+```
+
+after that, we must validate the account using a captcha `POST` request at /api/v1/auth/sendCaptchaCode
+
+> ## Send captcha
+
+```js
+// body
+{
+    "email": "example@gmail.com",
+}
+
+```
+
+this will send a code to the given email, to confirm it, we send another requests to the same URL but this time we must provide the **code** property:
+
+```js
+// body
+{
+    "email": "example@gmail.com",
+    "code": 1234
+}
+
 ```
 
 > ## Login
@@ -23,6 +49,7 @@ using `POST` at /api/v1/auth/login
 {
   "email": "example@gmail.com",
   "password": "pass1234", // Current password
+  "remember": true, // Return an expire date with the cookie
 }
 ```
 
@@ -97,4 +124,4 @@ using `DELETE` at /api/v1/auth/deleteMyAccount
 }
 ```
 
-_Last updated on August 9, 2024 by Aymen_
+_Last updated on August 15, 2024 by Aymen_

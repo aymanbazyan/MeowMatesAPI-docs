@@ -5,6 +5,8 @@ slug: /
 
 # Tutorial Intro
 
+---
+
 Let's discover **MeowMates in less than 5 minutes**.
 
 ## Getting Started

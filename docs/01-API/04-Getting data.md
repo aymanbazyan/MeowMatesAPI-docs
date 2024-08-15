@@ -1,5 +1,11 @@
 # Request data
 
+---
+
+:::note
+You must provide **Authorization: "Bearer "TOKEN"** in **Headers** for each request
+:::
+
 > ## Get all users
 
 using `GET` at **/api/v1/users**
@@ -16,4 +22,4 @@ using `GET` at **/api/v1/users/;id**
 <URL>/api/v1/users/<123456789>
 ```
 
-_Last updated on August 9, 2024 by Aymen_
+_Last updated on August 15, 2024 by Aymen_
