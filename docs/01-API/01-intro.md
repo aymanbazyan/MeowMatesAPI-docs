@@ -9,6 +9,10 @@ slug: /
 
 Let's discover **MeowMates in less than 5 minutes**.
 
+:::warning
+Note that you must know a bit of how to install and configure MongoDB collections and indexes
+:::
+
 ## Getting Started
 
 Get started by **opening any code editor**.

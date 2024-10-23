@@ -4,7 +4,7 @@
 
 > ## Sign up
 
-using `POST` at /api/v1/auth/signup
+Using `POST` at `/api/v1/auth/signup`
 
 ```js
 // body
@@ -17,7 +17,9 @@ using `POST` at /api/v1/auth/signup
 // This account is not valid yet
 ```
 
-after that, we must validate the account using a captcha `POST` request at /api/v1/auth/sendCaptchaCode
+After that, we must validate the account using a captcha `POST` request at `/api/v1/auth/sendCaptchaCode`
+
+---
 
 > ## Send captcha
 
@@ -26,23 +28,25 @@ after that, we must validate the account using a captcha `POST` request at /api/
 {
     "email": "example@gmail.com",
 }
-
 ```
 
-this will send a code to the given email, to confirm it, we send another requests to the same URL but this time we must provide the **code** property:
+This will send a code to the given email, to confirm it, we send another requests to `The same URL` but this time we must provide the **code** property:
+
+> ## Confirm Capatcha
 
 ```js
 // body
 {
     "email": "example@gmail.com",
-    "code": 1234
+    "code": abcdef
 }
-
 ```
+
+---
 
 > ## Login
 
-using `POST` at /api/v1/auth/login
+Using `POST` at `/api/v1/auth/login`
 
 ```js
 // body
@@ -53,9 +57,11 @@ using `POST` at /api/v1/auth/login
 }
 ```
 
+---
+
 > ## Forgot password
 
-using `POST` at /api/v1/auth/forgotPassword
+Using `POST` at `/api/v1/auth/forgotPassword`
 
 ```js
 // body
@@ -68,7 +74,7 @@ using `POST` at /api/v1/auth/forgotPassword
 These 3 requests returns a token, save it for other uses.
 :::
 
-using `PATCH` at /api/v1/auth/resetPassword/;token
+Using `PATCH` at `/api/v1/auth/resetPassword/<token>`
 
 ```js
 // body
@@ -78,9 +84,11 @@ using `PATCH` at /api/v1/auth/resetPassword/;token
 }
 ```
 
+---
+
 > ## Change password
 
-using `PATCH` at /api/v1/auth/updateMyPassword
+Using `PATCH` at `/api/v1/auth/updateMyPassword`
 
 ```js
 // body
@@ -96,9 +104,15 @@ using `PATCH` at /api/v1/auth/updateMyPassword
 }
 ```
 
+---
+
 > ## Update info
 
-using `PATCH` at /api/v1/auth/changeAccountData
+Using `PATCH` at `/api/v1/auth/changeAccountData`
+
+:::note
+Adjust the `ALLOW_USER_TO_EDIT` array in [config.env](/docs/API/Config) **if you want**
+:::
 
 ```js
 // body
@@ -113,9 +127,11 @@ using `PATCH` at /api/v1/auth/changeAccountData
 }
 ```
 
+---
+
 > ## Delete account
 
-using `DELETE` at /api/v1/auth/deleteMyAccount
+Using `DELETE` at `/api/v1/auth/deleteMyAccount`
 
 ```js
 // headers
