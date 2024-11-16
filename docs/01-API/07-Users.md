@@ -12,20 +12,13 @@ You must provide **Authorization: "Bearer "TOKEN"** in **Headers** for each requ
 
 Using `GET` at `/api/v1/users/me`
 
-```javascript
-// headers
-{
-  Authorization: "Bearer <TOKEN>";
-}
-```
-
 ---
 
 > ## Get 1 user by ID
 
 Using `GET` at `/api/v1/users/:id`
 
-```bash
+```javascript
 <URL>/api/v1/users/<123456789>
 ```
 
@@ -45,6 +38,6 @@ Using `POST` at `/api/v1/users/search`
 
 ```
 
-Also you can edit the number of typos in [config.env](/docs/API/Config)
+Also you can edit `MAX_SEARCH_TYPOS` in [config.env](/docs/API/Config)
 
 _Last updated on October 23, 2024 by Aymen_

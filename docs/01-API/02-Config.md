@@ -19,11 +19,11 @@ You can create the **config.env** here:
 | Row 1    | Data     | -->
 
 ```javascript
-NODE_ENV=development
+NODE_ENV=development // or production
 PORT=3000
 
-// Your app's localhost
-CLIENT_URL=http://localhost:5173
+// Your app's localhost and prod link
+ALLOWED_URLS=["http://localhost:5173", "https://meow-mates.vercel.app"]
 
 // From MongoDB
 DATABASE=mongodb+srv://<YOUR NAME>:<PASSWORD>@<CLUSTER NAME>.<ID>.mongodb.net/<PROJECT NAME>
@@ -54,6 +54,10 @@ MAX_SEARCH_TYPOS=1
 
 // Other than password
 ALLOW_USER_TO_EDIT=["displayName", "email", "photoURL", "bio"]
+
+GET_REQUEST_LIMIT=30
+
+MAX_NUM_OF_FILES_ON_UPLOAD=5
 ```
 
 :::danger
