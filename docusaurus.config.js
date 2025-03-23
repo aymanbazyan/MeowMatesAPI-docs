@@ -103,15 +103,15 @@ const config = {
             items: [
               {
                 label: "Stack Overflow",
-                href: "https://stackoverflow.com/users/21908210/krabby4j",
+                href: "https://stackoverflow.com/users/21908210/ayman",
               },
               {
                 label: "Discord",
-                href: "https://discordapp.com/users/541202888563752960",
+                href: "https://discordapp.com/users/1315314290147721256",
               },
               {
                 label: "Twitter",
-                href: "https://x.com/Krabby67260014",
+                href: "https://x.com/",
               },
             ],
           },
